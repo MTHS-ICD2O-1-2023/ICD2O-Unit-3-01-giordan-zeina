@@ -1,39 +1,39 @@
-/* Created by: Giordan Zeina
-* Created on: Mar 2024
+/* Created by: Giordan
+* Created on: March 2024
 * This file contains the CSS for index.html
 */
+
+*/ .mdl-ripple {
+  background: #000;
+  opacity: 0.001;
+}
 
 .mdl-layout__header-row {
   justify-content: center;
   padding: 0;
+  color: rgb(255, 255, 255);
 }
 
 .mdl-layout__content {
-  padding-left: 15pt;
-  padding-right: 15pt;
-  padding-top: 15pt;
+  padding-left: 20pt;
+  padding-right: 20pt;
+  padding-top: 20pt;
 }
 
 .mdl-textfield__error {
-  color: lightgreen;
+  color: #fff;
 }
 
 .page-content {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
-}
-
-.page-content-answer {
-  color: rgb(0 0 0);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
-}
-
-.right-image {
-  float: right;
+  font-size: 1.5rem;
 }
 
 body {
-  background-color: cornflowerblue;
+  background-color: rgb(64, 127, 221);
+}
+
+img {
+  float: right;
 }

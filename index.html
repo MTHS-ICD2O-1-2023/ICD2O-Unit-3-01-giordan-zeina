@@ -1,89 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Area of a Trapizoid, with JS" />
-    <meta name="keywords" content="mths, ics2o" />
-    <meta name="author" content="Giordan Zeina" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <title>Area of a Trapizoid, with JS</title>
-  </head>
-  <body>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="./js/script.js"></script>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Area of a Trapizoid, with JS</span>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="right-image">
-          <img src="./images/trapezoid.svg" alt="trapezoid image" />
-        </div>
-        <br/>
-        <br/>
-          <div class="page-content"><font size="5">Formula</font></div>
-          <div class="mdl-textfield mdl-js-textfield">
-          <div class="page-content"><font size="6">A = [(a + b) / 2] x h</font></div>
-          <div class="mdl-textfield mdl-js-textfield">
-        <br />
-        <div class="page-content">Pleae enter integers for dimensions:</div>
-        <form action="#">
-            A base:
-        <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a-base"/>
-            <label class="mdl-textfield__label" for="a-base">A base</label>
-            <span class="mdl-textfield__error">Input is not a number.</span>
-          </div>
-          mm
-          </form>
-          <form action="#">
-          B base:
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b-base"/>
-            <label class="mdl-textfield__label" for="b-base">Enter a number ...</label>
-            <span class="mdl-textfield__error">Input is not a number.</span>
-          </div>
-          mm
-          </form>
-          <form action="#">
-            Height:
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height"/>
-            <label class="mdl-textfield__label" for="height">Enter a number ...</label>
-            <span class="mdl-textfield__error">Input is not a number.</span>
-          </div>
-          mm
-        </form>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Area of a Trapezoid, with JavaScript" />
+  <meta name="keywords" content="mths, ics2o" />
+  <meta name="author" content="Giordan Zeina" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <!-- This is the title of the webpage -->
+  <title>Area of Trapezoid</title>
+</head>
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- This is the header of the webpage -->
+        <span class="mdl-layout-title">
+          <h3>Area of Trapezoid, with JS</h3>
+        </span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div>
+        <img src="./images/trapezoid.svg" alt="trapezoid" />
+      </div>
+      <div class="page-content">
+        <!--This is the text-->
+        <h3>Formula
           <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="doMathClicked()">
-            Calculate Area
-          </button>
-        </form>
+          A = [ (a + b) / 2 ] x h
+        </h3>
         <br />
-        <br>
-        <div class="page-content-answer">
-          <div id="area"></div>
+        <h4>Please enter intergers for dimensions</h4>
+      </div>
+      <form action="#">
+        a base:
+        <div class="mdl-textfield mdl-js-textfield">
+          <!--This is where they type in the answer-->
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a-base" />
+          <label class="mdl-textfield__label" for="a-base">Enter a number ...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
-      </br>
-      </main>
-    </div>
-  </body>
+        mm
+      </form>
+      <form action="#">
+        b base:
+        <div class="mdl-textfield mdl-js-textfield">
+          <!--This is where they type in the answer-->
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b-base" />
+          <label class="mdl-textfield__label" for="b-base">Enter a number ...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        mm
+      </form>
+      <form action="#">
+        height:
+        <div class="mdl-textfield mdl-js-textfield">
+          <!--This is where they type in the answer-->
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" />
+          <label class="mdl-textfield__label" for="height">Enter a number ...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        mm
+      </form>
+      <br />
+      <!-- Colored raised button -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+        onclick="myButtonClicked()">
+        Calculate
+      </button>
+      <br />
+      <br />
+      <div id="area"></div>
+    </main>
+  </div>
+</body>
 </html>
